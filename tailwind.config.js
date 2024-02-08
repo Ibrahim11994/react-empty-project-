@@ -5,7 +5,8 @@ export default {
     container: {
       padding: {
         default: "1rem",
-      },center:true
+      },
+      center: true,
     },
     screens: {
       xs: "320px",
@@ -17,7 +18,12 @@ export default {
       lgl: "1024px",
       xl: "1280px",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        heroImage:
+          "url('https://images.pexels.com/photos/10679176/pexels-photo-10679176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
+      },
+    },
   },
   plugins: [],
 };

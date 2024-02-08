@@ -1,12 +1,37 @@
 import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Root } from "./component/Root";
+import Cart, { CartLoader } from "./component/Cart";
+import ShoppingBag from "./component/shoppingBag";
+import CartDetails, { CartDetailsLoader } from "./component/CartDetails";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      ,
+      {
+        path: "shop",
+        element: <ShoppingBag />,
+      },
+      {
+        path: "",
+        element: <Cart />,
+        loader: CartLoader,
+      },
+      {
+        path: ":id",
+        element: <CartDetails />,
+        loader:CartDetailsLoader
+      },
+    ],
+  },
+]);
 const App = () => {
   return (
-    <div className="grid items-center justify-center bg-white mt-10 container rounded-lg py-20 shadow">
-      <h1 className=" text-3xl font-extrabold capitalize">
-        
-        good evening 
-         </h1>
+    <div className="">
+      <RouterProvider router={router} />
     </div>
   );
 };
