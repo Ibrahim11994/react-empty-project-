@@ -7,7 +7,7 @@ const CartBox = ({ price, title, id, image }) => {
     <Link
       to={id.toString()}
       key={id}
-      className="mt-10 relative flex flex-col h-[320px] gap-6 shadow bg-white py-4 group hover:shadow-md overflow-hidden"
+      className="mt-10 relative flex flex-col h-[320px] rounded-md gap-6 shadow bg-white py-4 group hover:shadow-md overflow-hidden"
     >
       <div className="flex justify-center">
         <img className="h-[150px] w-[130px] " src={image} alt={title} />

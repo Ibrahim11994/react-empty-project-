@@ -10,8 +10,12 @@ export const Root = () => {
       <div className="bg-gray-200 ">
         <header className="flex items-center justify-between py-4 container">
           <NavLink to={"/"}>
-            <h1>
-              <FaShoppingBag />
+            <h1 className="flex items-center">
+              <FaShoppingBag className="text-yellow-800" />
+              <span className="font-bold">
+                {" "}
+                <span className="text-yellow-800">sh</span>opping.{" "}
+              </span>
             </h1>
           </NavLink>
 
