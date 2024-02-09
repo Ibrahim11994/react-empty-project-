@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="container grid lg:grid-cols-6 gap-6 py-10  ">
+    <div className="container grid lg:grid-cols-6 gap-6 py-10 items-center">
       <div className=" col-span-3 space-y-4">
         <Link to={"/"}>
           <h1 className="font-bold capitalize">

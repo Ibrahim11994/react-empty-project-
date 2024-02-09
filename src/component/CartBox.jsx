@@ -7,7 +7,7 @@ const CartBox = ({ price, title, id, image }) => {
     <Link
       to={id.toString()}
       key={id}
-      className="mt-10 relative flex flex-col h-[320px] rounded-md gap-6 shadow bg-white py-4 group hover:shadow-md overflow-hidden"
+      className="mt-10 relative flex flex-col h-[320px]  gap-6 shadow bg-white py-4 group hover:shadow-md "
     >
       <div className="flex justify-center">
         <img className="h-[150px] w-[130px] " src={image} alt={title} />
@@ -16,11 +16,11 @@ const CartBox = ({ price, title, id, image }) => {
         <p className="font-thin text-sm pt-4">{title}</p>
         <p className="font-semibold py-2">${price}</p>
       </div>
-      <div className=" absolute top-2 right-[-50px] bg-white w-10 h-[80px] flex items-center flex-col justify-around gap-2 group-hover:right-[2]">
-        <div className="bg-[#F0EFEF] p-2">
+      <div className=" absolute top-2 right-2 opacity-0 transition-all duration-300 bg-white w-10 h-[80px] flex items-center flex-col justify-around gap-2 group-hover:opacity-100">
+        <div className="bg-red-500 p-2 text-white shadow-lg">
           <FaPlus />
         </div>
-        <div className="p-2 bg-[#F0EFEF]">
+        <div className="p-2 bg-white shadow-lg">
           <IoEyeSharp />
         </div>
       </div>
