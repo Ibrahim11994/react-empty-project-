@@ -18,10 +18,10 @@ const CartBox = ({ price, title, id, image }) => {
       </div>
       <div className=" absolute top-2 right-2 opacity-0 transition-all duration-300 bg-white w-10 h-[80px] flex items-center flex-col justify-around gap-2 group-hover:opacity-100">
         <div className="bg-red-500 p-2 text-white shadow-lg">
-          <FaPlus />
+          <FaPlus size={20} />
         </div>
-        <div className="p-2 bg-white shadow-lg">
-          <IoEyeSharp />
+        <div className="p-2 bg-[#fff] shadow-xl">
+          <IoEyeSharp size={20} />
         </div>
       </div>
     </Link>
